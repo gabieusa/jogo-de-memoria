@@ -86,12 +86,6 @@ let gameOver = () => {
     order = [];
     clickedOrder = [];
   
-  var audio = new Audio('musica');
-  var gameOver = new Audio('somGameover')
-  audio.addEventListener('ended', function() {
-  audio.play();
-});
-
     playGame();
 }
 
@@ -112,3 +106,8 @@ blue.onclick = () => click(3);
 
 //inicio do jogo
 playGame();
+ var audio = new Audio('musica');
+ var gameOver = new Audio('somGameover')
+ audio.addEventListener('ended', function() {
+ audio.play();
+});
