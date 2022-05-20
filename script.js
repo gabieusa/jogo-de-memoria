@@ -98,7 +98,7 @@ let playGame = () => {
 }
 
 var musica=document.getElementById("musica");
-var somGameover=document.getElementById("somGameover");
+var gameOver=document.getElementById("somGameover");
 //Música em loop
 musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); };
 musica.play();
