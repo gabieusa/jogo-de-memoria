@@ -97,11 +97,12 @@ let playGame = () => {
     nextLevel();
 }
 
-var musica=document.getElementById("musica");
-var gameOver=document.getElementById("somGameover");
-//Música em loop
-musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); };
-musica.play();
+var audio = new Audio('musica');
+var gameOver = new Audio('somGameover')
+audio.addEventListener('ended', function() {
+  audio.play();
+});
+
 
 //eventos de clique para as cores
 green.onclick = () => click(0);
