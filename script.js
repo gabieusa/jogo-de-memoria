@@ -12,11 +12,6 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
 
-var audio = new Audio('musica');
-var gameOver = new Audio('somGameover')
-audio.addEventListener('ended', function() {
-  audio.play();
-});
 
 //cria ordem aletoria de cores
 let shuffleOrder = () => {
@@ -90,6 +85,12 @@ let gameOver = () => {
     alert(`Pontuação: ${score}!\nVocê perdeu o jogo!\nClique em OK para iniciar um novo jogo`);
     order = [];
     clickedOrder = [];
+  
+  var audio = new Audio('musica');
+  var gameOver = new Audio('somGameover')
+  audio.addEventListener('ended', function() {
+  audio.play();
+});
 
     playGame();
 }
