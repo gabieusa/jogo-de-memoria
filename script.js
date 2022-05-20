@@ -2,6 +2,12 @@ let order = [];
 let clickedOrder = [];
 let score = 0;
 
+var musica=document.getElementById("musica");
+var somGameover=document.getElementById("somGameover");
+//Música em loop
+musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
+musica.play();
+
 //0 - verde
 //1 - vermelho
 //2 - amarelo
@@ -12,11 +18,6 @@ const red = document.querySelector('.red');
 const green = document.querySelector('.green');
 const yellow = document.querySelector('.yellow');
 
-var musica=document.getElementById("musica");
-var somGameover=document.getElementById("somGameover");
-//Música em loop
-musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
-musica.play();
 
 //cria ordem aletoria de cores
 let shuffleOrder = () => {
