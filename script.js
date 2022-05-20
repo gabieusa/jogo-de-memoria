@@ -5,7 +5,7 @@ let score = 0;
 const music = document.getElementById("musica");
 music.somGameover = document.getElementById("somGameover");
 //Música em loop
-musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
+musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); };
 musica.play();
 
 //0 - verde
