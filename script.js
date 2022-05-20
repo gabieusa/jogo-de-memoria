@@ -2,13 +2,6 @@ let order = [];
 let clickedOrder = [];
 let score = 0;
 
-const music = new Audio('musica');
-music.play();
-music.loop =true;
-music.playbackRate = 2;
-music.somGameover = document.getElementById("somGameover");
-
-
 //0 - verde
 //1 - vermelho
 //2 - amarelo
@@ -103,6 +96,12 @@ let playGame = () => {
 
     nextLevel();
 }
+
+const music = new Audio('musica');
+music.play();
+music.loop =true;
+music.playbackRate = 2;
+music.somGameover = document.getElementById("somGameover");
 
 //eventos de clique para as cores
 green.onclick = () => click(0);
