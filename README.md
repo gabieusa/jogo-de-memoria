@@ -8,7 +8,7 @@ Projeto produzido por um bootcamp pela [Digital Innovation One](https://digitali
 
 # Descrição do projeto
 
-Neste projeto,  um jogo da nave utilizando HTML, CSS e Javascript.
+Neste projeto,  um jogo de memória utilizando HTML, CSS e Javascript.
 
 Espero que curta :)
 
